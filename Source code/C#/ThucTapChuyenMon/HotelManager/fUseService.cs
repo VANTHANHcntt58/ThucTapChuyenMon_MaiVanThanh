@@ -100,30 +100,30 @@ namespace HotelManager
             {
                 case 1:
                     {
-                        button.BackColor = System.Drawing.Color.Tomato;
-                        button.color = System.Drawing.Color.Tomato;
+                        button.BackColor = System.Drawing.Color.Red;
+                        button.color = System.Drawing.Color.Red;
                         button.colorActive = System.Drawing.Color.LightSalmon;
                         break;
                     }
                 case 2:
                     {
-                        button.BackColor = System.Drawing.Color.Violet;
-                        button.color = System.Drawing.Color.Violet;
+                        button.BackColor = System.Drawing.Color.Lime;
+                        button.color = System.Drawing.Color.Lime;
                         button.colorActive = System.Drawing.Color.Thistle;
                         break;
                     }
                 case 3:
                     {
-                        button.BackColor = System.Drawing.Color.DeepSkyBlue;
-                        button.color = System.Drawing.Color.DeepSkyBlue;
+                        button.BackColor = System.Drawing.Color.Blue;
+                        button.color = System.Drawing.Color.Blue;
                         button.colorActive = System.Drawing.Color.LightSkyBlue;
                         break;
                     }
                 case 4:
                     {
-                        button.BackColor = System.Drawing.Color.LimeGreen;
-                        button.color = System.Drawing.Color.LimeGreen;
-                        button.colorActive = System.Drawing.Color.LightGreen;
+                        button.BackColor = System.Drawing.Color.Gold;
+                        button.color = System.Drawing.Color.Gold;
+                        button.colorActive = System.Drawing.Color.LightGoldenrodYellow;
                         break;
                     }
                 default:
@@ -146,7 +146,7 @@ namespace HotelManager
                 Bunifu.Framework.UI.BunifuTileButton button = new Bunifu.Framework.UI.BunifuTileButton();
                 button.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 button.ForeColor = System.Drawing.Color.White;
-                button.Image = global::HotelManager.Properties.Resources.Room;
+                button.Image = global::HotelManager.Properties.Resources.bed;
                 button.ImagePosition = 14;
                 button.ImageZoom =36;
                 button.LabelPosition = 29;
@@ -171,9 +171,9 @@ namespace HotelManager
             totalPrice = 0;
             Bunifu.Framework.UI.BunifuTileButton button = sender as Bunifu.Framework.UI.BunifuTileButton;
             flowLayoutRooms.Tag = button.Tag;
-            button.BackColor = System.Drawing.Color.SeaGreen;
-            button.color = System.Drawing.Color.SeaGreen;
-            button.colorActive = System.Drawing.Color.MediumSeaGreen;
+            button.BackColor = System.Drawing.Color.DarkBlue;
+            button.color = System.Drawing.Color.DarkBlue;
+            button.colorActive = System.Drawing.Color.MediumBlue;
             foreach (var item in flowLayoutRooms.Controls)
             {
                 if (item != button)
@@ -383,23 +383,24 @@ namespace HotelManager
                 e.Handled = true;
         }
 
-        private void btnAddCustomer_Click(object sender, EventArgs e)
+        private void btnPayAlll_Click(object sender, EventArgs e)
         {
             Room room = flowLayoutRooms.Tag as Room;
-            if (MessageBox.Show("Bạn có chắc chắn thanh toán cho "  +room.Name+ " không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc chắn thanh toán cho " + room.Name + " không?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 int idBill = BillDAO.Instance.GetIdBillFromIdRoom(room.Id);
-                Pay(idBill,int.Parse(numericUpDown1.Value.ToString()));
-               // ReportDAO.Instance.InsertReport(idBill);
-                MessageBox.Show( "Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Pay(idBill, int.Parse(numericUpDown1.Value.ToString()));
+                // ReportDAO.Instance.InsertReport(idBill);
+                MessageBox.Show("Thanh toán thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                fPrintBill fPrintBill = new fPrintBill(room.Id,idBill);
+                fPrintBill fPrintBill = new fPrintBill(room.Id, idBill);
                 fPrintBill.ShowDialog();
-                this.Show();              
+                this.Show();
                 LoadListFullRoom();
                 listViewBillRoom.Items.Clear();
                 listViewUseService.Items.Clear();
             }
         }
+
     }
 }

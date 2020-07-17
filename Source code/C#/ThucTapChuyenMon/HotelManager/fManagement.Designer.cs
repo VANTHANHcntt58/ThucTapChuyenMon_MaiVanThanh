@@ -32,19 +32,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fManagement));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelRight = new System.Windows.Forms.Panel();
-            this.metroTile17 = new MetroFramework.Controls.MetroTile();
-            this.metroTile16 = new MetroFramework.Controls.MetroTile();
-            this.titleManageRoom = new MetroFramework.Controls.MetroTile();
-            this.metroTile8 = new MetroFramework.Controls.MetroTile();
-            this.titleRecieveRoom = new MetroFramework.Controls.MetroTile();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
-            this.titleBookRoom = new MetroFramework.Controls.MetroTile();
             this.panelLeft = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnStaff = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRoom = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnBill = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnBookingRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRecieveRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPay = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNavigationPanel = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAccountProfile = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnChangePassword = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLogOut = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panelRight.SuspendLayout();
@@ -61,115 +59,14 @@
             // 
             // panelRight
             // 
-            this.panelRight.BackColor = System.Drawing.Color.White;
+            this.panelRight.BackColor = System.Drawing.Color.DarkBlue;
             this.panelRight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelRight.BackgroundImage")));
-            this.panelRight.Controls.Add(this.metroTile17);
-            this.panelRight.Controls.Add(this.metroTile16);
-            this.panelRight.Controls.Add(this.titleManageRoom);
-            this.panelRight.Controls.Add(this.metroTile8);
-            this.panelRight.Controls.Add(this.titleRecieveRoom);
             this.panelRight.Controls.Add(this.btnClose);
-            this.panelRight.Controls.Add(this.titleBookRoom);
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelRight.Location = new System.Drawing.Point(177, 0);
+            this.panelRight.Location = new System.Drawing.Point(206, 0);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(939, 583);
+            this.panelRight.Size = new System.Drawing.Size(857, 583);
             this.panelRight.TabIndex = 1;
-            // 
-            // metroTile17
-            // 
-            this.metroTile17.ActiveControl = null;
-            this.metroTile17.BackColor = System.Drawing.Color.DarkBlue;
-            this.metroTile17.ForeColor = System.Drawing.Color.White;
-            this.metroTile17.Location = new System.Drawing.Point(194, 12);
-            this.metroTile17.Name = "metroTile17";
-            this.metroTile17.Size = new System.Drawing.Size(203, 130);
-            this.metroTile17.TabIndex = 47;
-            this.metroTile17.Text = "Quản Lí Khách Hàng";
-            this.metroTile17.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile17.TileImage")));
-            this.metroTile17.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile17.UseCustomBackColor = true;
-            this.metroTile17.UseCustomForeColor = true;
-            this.metroTile17.UseSelectable = true;
-            this.metroTile17.UseStyleColors = true;
-            this.metroTile17.UseTileImage = true;
-            this.metroTile17.Click += new System.EventHandler(this.metroTile17_Click);
-            // 
-            // metroTile16
-            // 
-            this.metroTile16.ActiveControl = null;
-            this.metroTile16.BackColor = System.Drawing.Color.DarkBlue;
-            this.metroTile16.ForeColor = System.Drawing.Color.White;
-            this.metroTile16.Location = new System.Drawing.Point(197, 402);
-            this.metroTile16.Name = "metroTile16";
-            this.metroTile16.Size = new System.Drawing.Size(200, 135);
-            this.metroTile16.TabIndex = 44;
-            this.metroTile16.Text = "Quản Lí Hóa Đơn";
-            this.metroTile16.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile16.TileImage")));
-            this.metroTile16.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile16.UseCustomBackColor = true;
-            this.metroTile16.UseCustomForeColor = true;
-            this.metroTile16.UseSelectable = true;
-            this.metroTile16.UseStyleColors = true;
-            this.metroTile16.UseTileImage = true;
-            this.metroTile16.Click += new System.EventHandler(this.metroTile16_Click);
-            // 
-            // titleManageRoom
-            // 
-            this.titleManageRoom.ActiveControl = null;
-            this.titleManageRoom.BackColor = System.Drawing.Color.DarkBlue;
-            this.titleManageRoom.ForeColor = System.Drawing.Color.White;
-            this.titleManageRoom.Location = new System.Drawing.Point(29, 261);
-            this.titleManageRoom.Name = "titleManageRoom";
-            this.titleManageRoom.Size = new System.Drawing.Size(135, 135);
-            this.titleManageRoom.TabIndex = 34;
-            this.titleManageRoom.Text = "Quản Lí Phòng";
-            this.titleManageRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleManageRoom.TileImage")));
-            this.titleManageRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleManageRoom.UseCustomBackColor = true;
-            this.titleManageRoom.UseCustomForeColor = true;
-            this.titleManageRoom.UseSelectable = true;
-            this.titleManageRoom.UseStyleColors = true;
-            this.titleManageRoom.UseTileImage = true;
-            this.titleManageRoom.Click += new System.EventHandler(this.titleManageRoom_Click);
-            // 
-            // metroTile8
-            // 
-            this.metroTile8.ActiveControl = null;
-            this.metroTile8.BackColor = System.Drawing.Color.DarkBlue;
-            this.metroTile8.ForeColor = System.Drawing.Color.White;
-            this.metroTile8.Location = new System.Drawing.Point(29, 402);
-            this.metroTile8.Name = "metroTile8";
-            this.metroTile8.Size = new System.Drawing.Size(135, 135);
-            this.metroTile8.TabIndex = 29;
-            this.metroTile8.Text = "Quản Lí Nhân Viên";
-            this.metroTile8.TileImage = ((System.Drawing.Image)(resources.GetObject("metroTile8.TileImage")));
-            this.metroTile8.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.metroTile8.UseCustomBackColor = true;
-            this.metroTile8.UseCustomForeColor = true;
-            this.metroTile8.UseSelectable = true;
-            this.metroTile8.UseStyleColors = true;
-            this.metroTile8.UseTileImage = true;
-            this.metroTile8.Click += new System.EventHandler(this.metroTile8_Click);
-            // 
-            // titleRecieveRoom
-            // 
-            this.titleRecieveRoom.ActiveControl = null;
-            this.titleRecieveRoom.BackColor = System.Drawing.Color.DarkBlue;
-            this.titleRecieveRoom.ForeColor = System.Drawing.Color.White;
-            this.titleRecieveRoom.Location = new System.Drawing.Point(29, 145);
-            this.titleRecieveRoom.Name = "titleRecieveRoom";
-            this.titleRecieveRoom.Size = new System.Drawing.Size(135, 110);
-            this.titleRecieveRoom.TabIndex = 25;
-            this.titleRecieveRoom.Text = "Nhận Phòng";
-            this.titleRecieveRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleRecieveRoom.TileImage")));
-            this.titleRecieveRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleRecieveRoom.UseCustomBackColor = true;
-            this.titleRecieveRoom.UseCustomForeColor = true;
-            this.titleRecieveRoom.UseSelectable = true;
-            this.titleRecieveRoom.UseStyleColors = true;
-            this.titleRecieveRoom.UseTileImage = true;
-            this.titleRecieveRoom.Click += new System.EventHandler(this.titleRecieveRoom_Click);
             // 
             // btnClose
             // 
@@ -177,7 +74,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(916, 7);
+            this.btnClose.Location = new System.Drawing.Point(834, 7);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -186,52 +83,181 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
-            // titleBookRoom
-            // 
-            this.titleBookRoom.ActiveControl = null;
-            this.titleBookRoom.BackColor = System.Drawing.Color.DarkBlue;
-            this.titleBookRoom.ForeColor = System.Drawing.Color.White;
-            this.titleBookRoom.Location = new System.Drawing.Point(29, 12);
-            this.titleBookRoom.Name = "titleBookRoom";
-            this.titleBookRoom.Size = new System.Drawing.Size(135, 127);
-            this.titleBookRoom.TabIndex = 17;
-            this.titleBookRoom.Text = "Đặt Phòng";
-            this.titleBookRoom.TileImage = ((System.Drawing.Image)(resources.GetObject("titleBookRoom.TileImage")));
-            this.titleBookRoom.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.titleBookRoom.UseCustomBackColor = true;
-            this.titleBookRoom.UseCustomForeColor = true;
-            this.titleBookRoom.UseSelectable = true;
-            this.titleBookRoom.UseStyleColors = true;
-            this.titleBookRoom.UseTileImage = true;
-            this.titleBookRoom.Click += new System.EventHandler(this.titleSignUpRoom_Click);
-            // 
             // panelLeft
             // 
             this.panelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLeft.BackgroundImage")));
             this.panelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLeft.Controls.Add(this.btnStaff);
+            this.panelLeft.Controls.Add(this.btnCustomer);
+            this.panelLeft.Controls.Add(this.btnRoom);
+            this.panelLeft.Controls.Add(this.btnBill);
             this.panelLeft.Controls.Add(this.btnBookingRoom);
             this.panelLeft.Controls.Add(this.btnRecieveRoom);
             this.panelLeft.Controls.Add(this.btnPay);
             this.panelLeft.Controls.Add(this.btnNavigationPanel);
-            this.panelLeft.Controls.Add(this.btnAccountProfile);
+            this.panelLeft.Controls.Add(this.btnChangePassword);
             this.panelLeft.Controls.Add(this.btnLogOut);
             this.panelLeft.Controls.Add(this.bunifuFlatButton1);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelLeft.GradientBottomLeft = System.Drawing.Color.DarkBlue;
-            this.panelLeft.GradientBottomRight = System.Drawing.Color.DarkBlue;
-            this.panelLeft.GradientTopLeft = System.Drawing.Color.DarkBlue;
-            this.panelLeft.GradientTopRight = System.Drawing.Color.DarkBlue;
+            this.panelLeft.GradientBottomLeft = System.Drawing.Color.Maroon;
+            this.panelLeft.GradientBottomRight = System.Drawing.Color.Maroon;
+            this.panelLeft.GradientTopLeft = System.Drawing.Color.Maroon;
+            this.panelLeft.GradientTopRight = System.Drawing.Color.Maroon;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
             this.panelLeft.Quality = 10;
-            this.panelLeft.Size = new System.Drawing.Size(177, 583);
+            this.panelLeft.Size = new System.Drawing.Size(206, 583);
             this.panelLeft.TabIndex = 0;
+            // 
+            // btnStaff
+            // 
+            this.btnStaff.Activecolor = System.Drawing.Color.Brown;
+            this.btnStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnStaff.BackColor = System.Drawing.Color.Brown;
+            this.btnStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnStaff.BorderRadius = 0;
+            this.btnStaff.ButtonText = "   Quản lí nhân viên";
+            this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStaff.DisabledColor = System.Drawing.Color.Gray;
+            this.btnStaff.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnStaff.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnStaff.Iconimage")));
+            this.btnStaff.Iconimage_right = null;
+            this.btnStaff.Iconimage_right_Selected = null;
+            this.btnStaff.Iconimage_Selected = null;
+            this.btnStaff.IconMarginLeft = 0;
+            this.btnStaff.IconMarginRight = 0;
+            this.btnStaff.IconRightVisible = true;
+            this.btnStaff.IconRightZoom = 0D;
+            this.btnStaff.IconVisible = true;
+            this.btnStaff.IconZoom = 50D;
+            this.btnStaff.IsTab = false;
+            this.btnStaff.Location = new System.Drawing.Point(-1, 317);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Normalcolor = System.Drawing.Color.Brown;
+            this.btnStaff.OnHovercolor = System.Drawing.Color.Brown;
+            this.btnStaff.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnStaff.selected = false;
+            this.btnStaff.Size = new System.Drawing.Size(209, 40);
+            this.btnStaff.TabIndex = 13;
+            this.btnStaff.Text = "   Quản lí nhân viên";
+            this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff.Textcolor = System.Drawing.Color.White;
+            this.btnStaff.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
+            // 
+            // btnCustomer
+            // 
+            this.btnCustomer.Activecolor = System.Drawing.Color.Brown;
+            this.btnCustomer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnCustomer.BackColor = System.Drawing.Color.Brown;
+            this.btnCustomer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCustomer.BorderRadius = 0;
+            this.btnCustomer.ButtonText = "   Quản lí khách hàng";
+            this.btnCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCustomer.DisabledColor = System.Drawing.Color.Gray;
+            this.btnCustomer.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnCustomer.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Iconimage")));
+            this.btnCustomer.Iconimage_right = null;
+            this.btnCustomer.Iconimage_right_Selected = null;
+            this.btnCustomer.Iconimage_Selected = null;
+            this.btnCustomer.IconMarginLeft = 0;
+            this.btnCustomer.IconMarginRight = 0;
+            this.btnCustomer.IconRightVisible = true;
+            this.btnCustomer.IconRightZoom = 0D;
+            this.btnCustomer.IconVisible = true;
+            this.btnCustomer.IconZoom = 50D;
+            this.btnCustomer.IsTab = false;
+            this.btnCustomer.Location = new System.Drawing.Point(-1, 271);
+            this.btnCustomer.Name = "btnCustomer";
+            this.btnCustomer.Normalcolor = System.Drawing.Color.Brown;
+            this.btnCustomer.OnHovercolor = System.Drawing.Color.Brown;
+            this.btnCustomer.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnCustomer.selected = false;
+            this.btnCustomer.Size = new System.Drawing.Size(209, 40);
+            this.btnCustomer.TabIndex = 12;
+            this.btnCustomer.Text = "   Quản lí khách hàng";
+            this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCustomer.Textcolor = System.Drawing.Color.White;
+            this.btnCustomer.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            // 
+            // btnRoom
+            // 
+            this.btnRoom.Activecolor = System.Drawing.Color.Brown;
+            this.btnRoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnRoom.BackColor = System.Drawing.Color.Brown;
+            this.btnRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRoom.BorderRadius = 0;
+            this.btnRoom.ButtonText = "   Quản lí phòng";
+            this.btnRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRoom.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRoom.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRoom.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRoom.Iconimage")));
+            this.btnRoom.Iconimage_right = null;
+            this.btnRoom.Iconimage_right_Selected = null;
+            this.btnRoom.Iconimage_Selected = null;
+            this.btnRoom.IconMarginLeft = 0;
+            this.btnRoom.IconMarginRight = 0;
+            this.btnRoom.IconRightVisible = true;
+            this.btnRoom.IconRightZoom = 0D;
+            this.btnRoom.IconVisible = true;
+            this.btnRoom.IconZoom = 50D;
+            this.btnRoom.IsTab = false;
+            this.btnRoom.Location = new System.Drawing.Point(-3, 226);
+            this.btnRoom.Name = "btnRoom";
+            this.btnRoom.Normalcolor = System.Drawing.Color.Brown;
+            this.btnRoom.OnHovercolor = System.Drawing.Color.Brown;
+            this.btnRoom.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRoom.selected = false;
+            this.btnRoom.Size = new System.Drawing.Size(209, 40);
+            this.btnRoom.TabIndex = 11;
+            this.btnRoom.Text = "   Quản lí phòng";
+            this.btnRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoom.Textcolor = System.Drawing.Color.White;
+            this.btnRoom.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click);
+            // 
+            // btnBill
+            // 
+            this.btnBill.Activecolor = System.Drawing.Color.Brown;
+            this.btnBill.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnBill.BackColor = System.Drawing.Color.Brown;
+            this.btnBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBill.BorderRadius = 0;
+            this.btnBill.ButtonText = "   Quản lí hóa đơn";
+            this.btnBill.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBill.DisabledColor = System.Drawing.Color.Gray;
+            this.btnBill.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnBill.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnBill.Iconimage")));
+            this.btnBill.Iconimage_right = null;
+            this.btnBill.Iconimage_right_Selected = null;
+            this.btnBill.Iconimage_Selected = null;
+            this.btnBill.IconMarginLeft = 0;
+            this.btnBill.IconMarginRight = 0;
+            this.btnBill.IconRightVisible = true;
+            this.btnBill.IconRightZoom = 0D;
+            this.btnBill.IconVisible = true;
+            this.btnBill.IconZoom = 50D;
+            this.btnBill.IsTab = false;
+            this.btnBill.Location = new System.Drawing.Point(0, 180);
+            this.btnBill.Name = "btnBill";
+            this.btnBill.Normalcolor = System.Drawing.Color.Brown;
+            this.btnBill.OnHovercolor = System.Drawing.Color.Brown;
+            this.btnBill.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnBill.selected = false;
+            this.btnBill.Size = new System.Drawing.Size(206, 40);
+            this.btnBill.TabIndex = 10;
+            this.btnBill.Text = "   Quản lí hóa đơn";
+            this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBill.Textcolor = System.Drawing.Color.White;
+            this.btnBill.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
             // btnBookingRoom
             // 
-            this.btnBookingRoom.Activecolor = System.Drawing.Color.Blue;
+            this.btnBookingRoom.Activecolor = System.Drawing.Color.Snow;
             this.btnBookingRoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnBookingRoom.BackColor = System.Drawing.Color.Blue;
+            this.btnBookingRoom.BackColor = System.Drawing.Color.Brown;
             this.btnBookingRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBookingRoom.BorderRadius = 0;
             this.btnBookingRoom.ButtonText = "    Đặt phòng";
@@ -251,11 +277,11 @@
             this.btnBookingRoom.IsTab = false;
             this.btnBookingRoom.Location = new System.Drawing.Point(0, 42);
             this.btnBookingRoom.Name = "btnBookingRoom";
-            this.btnBookingRoom.Normalcolor = System.Drawing.Color.Blue;
-            this.btnBookingRoom.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnBookingRoom.Normalcolor = System.Drawing.Color.Brown;
+            this.btnBookingRoom.OnHovercolor = System.Drawing.Color.Brown;
             this.btnBookingRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnBookingRoom.selected = false;
-            this.btnBookingRoom.Size = new System.Drawing.Size(177, 40);
+            this.btnBookingRoom.Size = new System.Drawing.Size(206, 40);
             this.btnBookingRoom.TabIndex = 9;
             this.btnBookingRoom.Text = "    Đặt phòng";
             this.btnBookingRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -265,9 +291,9 @@
             // 
             // btnRecieveRoom
             // 
-            this.btnRecieveRoom.Activecolor = System.Drawing.Color.Blue;
+            this.btnRecieveRoom.Activecolor = System.Drawing.Color.Brown;
             this.btnRecieveRoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnRecieveRoom.BackColor = System.Drawing.Color.Blue;
+            this.btnRecieveRoom.BackColor = System.Drawing.Color.Brown;
             this.btnRecieveRoom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnRecieveRoom.BorderRadius = 0;
             this.btnRecieveRoom.ButtonText = "    Nhận phòng";
@@ -287,25 +313,26 @@
             this.btnRecieveRoom.IsTab = false;
             this.btnRecieveRoom.Location = new System.Drawing.Point(0, 88);
             this.btnRecieveRoom.Name = "btnRecieveRoom";
-            this.btnRecieveRoom.Normalcolor = System.Drawing.Color.Blue;
-            this.btnRecieveRoom.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnRecieveRoom.Normalcolor = System.Drawing.Color.Brown;
+            this.btnRecieveRoom.OnHovercolor = System.Drawing.Color.Brown;
             this.btnRecieveRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRecieveRoom.selected = false;
-            this.btnRecieveRoom.Size = new System.Drawing.Size(177, 40);
+            this.btnRecieveRoom.Size = new System.Drawing.Size(206, 40);
             this.btnRecieveRoom.TabIndex = 8;
             this.btnRecieveRoom.Text = "    Nhận phòng";
             this.btnRecieveRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecieveRoom.Textcolor = System.Drawing.Color.White;
             this.btnRecieveRoom.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecieveRoom.Click += new System.EventHandler(this.btnRecieveRoom_Click);
             // 
             // btnPay
             // 
             this.btnPay.Activecolor = System.Drawing.Color.Blue;
             this.btnPay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnPay.BackColor = System.Drawing.Color.Blue;
+            this.btnPay.BackColor = System.Drawing.Color.Brown;
             this.btnPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPay.BorderRadius = 0;
-            this.btnPay.ButtonText = "    Dịch vụ & thanh toán";
+            this.btnPay.ButtonText = "    Dịch vụ và thanh toán";
             this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPay.DisabledColor = System.Drawing.Color.Gray;
             this.btnPay.Iconcolor = System.Drawing.Color.Transparent;
@@ -322,21 +349,22 @@
             this.btnPay.IsTab = false;
             this.btnPay.Location = new System.Drawing.Point(-3, 134);
             this.btnPay.Name = "btnPay";
-            this.btnPay.Normalcolor = System.Drawing.Color.Blue;
-            this.btnPay.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnPay.Normalcolor = System.Drawing.Color.Brown;
+            this.btnPay.OnHovercolor = System.Drawing.Color.Brown;
             this.btnPay.OnHoverTextColor = System.Drawing.Color.White;
             this.btnPay.selected = false;
-            this.btnPay.Size = new System.Drawing.Size(177, 40);
+            this.btnPay.Size = new System.Drawing.Size(209, 40);
             this.btnPay.TabIndex = 7;
-            this.btnPay.Text = "    Dịch vụ & thanh toán";
+            this.btnPay.Text = "    Dịch vụ và thanh toán";
             this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPay.Textcolor = System.Drawing.Color.White;
             this.btnPay.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnNavigationPanel
             // 
-            this.btnNavigationPanel.Activecolor = System.Drawing.Color.DarkBlue;
-            this.btnNavigationPanel.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnNavigationPanel.Activecolor = System.Drawing.Color.Maroon;
+            this.btnNavigationPanel.BackColor = System.Drawing.Color.Maroon;
             this.btnNavigationPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNavigationPanel.BorderRadius = 0;
             this.btnNavigationPanel.ButtonText = "";
@@ -356,57 +384,58 @@
             this.btnNavigationPanel.IsTab = false;
             this.btnNavigationPanel.Location = new System.Drawing.Point(0, 0);
             this.btnNavigationPanel.Name = "btnNavigationPanel";
-            this.btnNavigationPanel.Normalcolor = System.Drawing.Color.DarkBlue;
-            this.btnNavigationPanel.OnHovercolor = System.Drawing.Color.DarkBlue;
+            this.btnNavigationPanel.Normalcolor = System.Drawing.Color.Maroon;
+            this.btnNavigationPanel.OnHovercolor = System.Drawing.Color.Maroon;
             this.btnNavigationPanel.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNavigationPanel.selected = false;
-            this.btnNavigationPanel.Size = new System.Drawing.Size(177, 40);
+            this.btnNavigationPanel.Size = new System.Drawing.Size(206, 40);
             this.btnNavigationPanel.TabIndex = 6;
             this.btnNavigationPanel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNavigationPanel.Textcolor = System.Drawing.Color.White;
             this.btnNavigationPanel.TextFont = new System.Drawing.Font("Segoe UI", 9.75F);
             this.btnNavigationPanel.Click += new System.EventHandler(this.btnNavigationPanel_Click_1);
             // 
-            // btnAccountProfile
+            // btnChangePassword
             // 
-            this.btnAccountProfile.Activecolor = System.Drawing.Color.Blue;
-            this.btnAccountProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAccountProfile.BackColor = System.Drawing.Color.Blue;
-            this.btnAccountProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAccountProfile.BorderRadius = 0;
-            this.btnAccountProfile.ButtonText = "    Thông Tin Cá Nhân";
-            this.btnAccountProfile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAccountProfile.DisabledColor = System.Drawing.Color.Gray;
-            this.btnAccountProfile.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnAccountProfile.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAccountProfile.Iconimage")));
-            this.btnAccountProfile.Iconimage_right = null;
-            this.btnAccountProfile.Iconimage_right_Selected = null;
-            this.btnAccountProfile.Iconimage_Selected = null;
-            this.btnAccountProfile.IconMarginLeft = 0;
-            this.btnAccountProfile.IconMarginRight = 0;
-            this.btnAccountProfile.IconRightVisible = true;
-            this.btnAccountProfile.IconRightZoom = 0D;
-            this.btnAccountProfile.IconVisible = true;
-            this.btnAccountProfile.IconZoom = 50D;
-            this.btnAccountProfile.IsTab = false;
-            this.btnAccountProfile.Location = new System.Drawing.Point(3, 485);
-            this.btnAccountProfile.Name = "btnAccountProfile";
-            this.btnAccountProfile.Normalcolor = System.Drawing.Color.Blue;
-            this.btnAccountProfile.OnHovercolor = System.Drawing.Color.Blue;
-            this.btnAccountProfile.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnAccountProfile.selected = false;
-            this.btnAccountProfile.Size = new System.Drawing.Size(177, 40);
-            this.btnAccountProfile.TabIndex = 5;
-            this.btnAccountProfile.Text = "    Thông Tin Cá Nhân";
-            this.btnAccountProfile.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccountProfile.Textcolor = System.Drawing.Color.White;
-            this.btnAccountProfile.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.Activecolor = System.Drawing.Color.Brown;
+            this.btnChangePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnChangePassword.BackColor = System.Drawing.Color.Brown;
+            this.btnChangePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnChangePassword.BorderRadius = 0;
+            this.btnChangePassword.ButtonText = "Đổi mật khẩu";
+            this.btnChangePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnChangePassword.DisabledColor = System.Drawing.Color.Gray;
+            this.btnChangePassword.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnChangePassword.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnChangePassword.Iconimage")));
+            this.btnChangePassword.Iconimage_right = null;
+            this.btnChangePassword.Iconimage_right_Selected = null;
+            this.btnChangePassword.Iconimage_Selected = null;
+            this.btnChangePassword.IconMarginLeft = 0;
+            this.btnChangePassword.IconMarginRight = 0;
+            this.btnChangePassword.IconRightVisible = true;
+            this.btnChangePassword.IconRightZoom = 0D;
+            this.btnChangePassword.IconVisible = true;
+            this.btnChangePassword.IconZoom = 50D;
+            this.btnChangePassword.IsTab = false;
+            this.btnChangePassword.Location = new System.Drawing.Point(3, 485);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Normalcolor = System.Drawing.Color.Brown;
+            this.btnChangePassword.OnHovercolor = System.Drawing.Color.Brown;
+            this.btnChangePassword.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnChangePassword.selected = false;
+            this.btnChangePassword.Size = new System.Drawing.Size(200, 40);
+            this.btnChangePassword.TabIndex = 5;
+            this.btnChangePassword.Text = "Đổi mật khẩu";
+            this.btnChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangePassword.Textcolor = System.Drawing.Color.White;
+            this.btnChangePassword.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Activecolor = System.Drawing.Color.Blue;
+            this.btnLogOut.Activecolor = System.Drawing.Color.Brown;
             this.btnLogOut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnLogOut.BackColor = System.Drawing.Color.Blue;
+            this.btnLogOut.BackColor = System.Drawing.Color.Brown;
             this.btnLogOut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogOut.BorderRadius = 0;
             this.btnLogOut.ButtonText = "    Đăng Xuất";
@@ -426,11 +455,11 @@
             this.btnLogOut.IsTab = false;
             this.btnLogOut.Location = new System.Drawing.Point(0, 531);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Normalcolor = System.Drawing.Color.Blue;
-            this.btnLogOut.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnLogOut.Normalcolor = System.Drawing.Color.Brown;
+            this.btnLogOut.OnHovercolor = System.Drawing.Color.Brown;
             this.btnLogOut.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogOut.selected = false;
-            this.btnLogOut.Size = new System.Drawing.Size(177, 40);
+            this.btnLogOut.Size = new System.Drawing.Size(203, 40);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.Text = "    Đăng Xuất";
             this.btnLogOut.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -478,11 +507,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1116, 583);
+            this.ClientSize = new System.Drawing.Size(1063, 583);
             this.Controls.Add(this.panelRight);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lí khách sạn";
@@ -498,19 +526,17 @@
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private Bunifu.Framework.UI.BunifuGradientPanel panelLeft;
         private System.Windows.Forms.Panel panelRight;
-        private MetroFramework.Controls.MetroTile titleBookRoom;
         private Bunifu.Framework.UI.BunifuImageButton btnClose;
-        private MetroFramework.Controls.MetroTile titleManageRoom;
-        private MetroFramework.Controls.MetroTile metroTile8;
-        private MetroFramework.Controls.MetroTile titleRecieveRoom;
-        private MetroFramework.Controls.MetroTile metroTile16;
-        private MetroFramework.Controls.MetroTile metroTile17;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAccountProfile;
+        private Bunifu.Framework.UI.BunifuFlatButton btnChangePassword;
         private Bunifu.Framework.UI.BunifuFlatButton btnLogOut;
         private Bunifu.Framework.UI.BunifuFlatButton btnNavigationPanel;
         private Bunifu.Framework.UI.BunifuFlatButton btnBookingRoom;
         private Bunifu.Framework.UI.BunifuFlatButton btnRecieveRoom;
         private Bunifu.Framework.UI.BunifuFlatButton btnPay;
+        private Bunifu.Framework.UI.BunifuFlatButton btnBill;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRoom;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCustomer;
+        private Bunifu.Framework.UI.BunifuFlatButton btnStaff;
     }
 }

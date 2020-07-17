@@ -37,7 +37,7 @@ namespace HotelManager
             }
             else
             {
-                MessageBox.Show( "Tên Đăng Nhập không tồn tại hoặc Mật Khẩu không đúng.\nVui lòng nhập lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show( "Tên Đăng Nhập không tồn tại hoặc Mvật Khẩu không đúng.\nVui lòng nhập lại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

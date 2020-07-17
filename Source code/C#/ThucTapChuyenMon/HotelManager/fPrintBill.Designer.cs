@@ -338,7 +338,7 @@
             this.bunifuSeparator3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator3.LineThickness = 5;
+            this.bunifuSeparator3.LineThickness = 8;
             this.bunifuSeparator3.Location = new System.Drawing.Point(18, 574);
             this.bunifuSeparator3.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
             this.bunifuSeparator3.Name = "bunifuSeparator3";
@@ -397,7 +397,7 @@
             // 
             this.bunifuSeparator2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator2.LineThickness = 5;
+            this.bunifuSeparator2.LineThickness = 8;
             this.bunifuSeparator2.Location = new System.Drawing.Point(18, 356);
             this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
@@ -662,7 +662,7 @@
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuSeparator1.LineThickness = 5;
+            this.bunifuSeparator1.LineThickness = 8;
             this.bunifuSeparator1.Location = new System.Drawing.Point(18, 167);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
@@ -872,7 +872,6 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fPrintBill";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fPrintBill";

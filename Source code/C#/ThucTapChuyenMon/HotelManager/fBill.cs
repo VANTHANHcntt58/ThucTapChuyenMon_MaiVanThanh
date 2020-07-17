@@ -92,9 +92,12 @@ namespace HotelManager
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
-        }      
+        }
 
-       
+        private void Search()
+        {
+            LoadFullBill(GetSearchBill(txbSearch.Text, cbBillSearch.SelectedIndex));
+        }
         private DataTable GetFullBill()
         {
             return BillDAO.Instance.LoaddFullBill();
@@ -102,6 +105,45 @@ namespace HotelManager
         private DataTable GetSearchBill(string text, int mode)
         {
             return BillDAO.Instance.SearchBill(text, mode);
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Text = txbSearch.Text.Trim();
+            if (txbSearch.Text != string.Empty)
+            {
+                txbDateCreate.Text = string.Empty;
+                txbName.Text = string.Empty;
+                txbPrice.Text = string.Empty;
+                txbStatusRoom.Text = string.Empty;
+                txbUser.Text = string.Empty;
+
+                btnSearch.Visible = false;
+                btnCancel.Visible = true;
+                Search();
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            LoadFullBill(GetFullBill());
+            btnCancel.Visible = false;
+            btnSearch.Visible = true;
+        }
+
+       
+        private void TxbSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+                btnSearch_Click(sender, null);
+            else
+                if (e.KeyChar == 27 && btnCancel.Visible == true)
+                btnCancel_Click(sender, null);
+        }
+        private void FBill_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 27 && btnCancel.Visible == true)
+                btnCancel_Click(sender, null);
         }
     }
 }

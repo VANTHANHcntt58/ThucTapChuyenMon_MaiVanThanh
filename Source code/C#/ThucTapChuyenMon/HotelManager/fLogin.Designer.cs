@@ -62,7 +62,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(325, 20);
+            this.label2.Location = new System.Drawing.Point(342, 18);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 37);
             this.label2.TabIndex = 3;
@@ -103,7 +103,7 @@
             this.txbUserName.Location = new System.Drawing.Point(332, 97);
             this.txbUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(370, 29);
+            this.txbUserName.Size = new System.Drawing.Size(261, 29);
             this.txbUserName.TabIndex = 0;
             this.txbUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
@@ -120,7 +120,7 @@
             this.txbPassWord.Location = new System.Drawing.Point(332, 172);
             this.txbPassWord.Margin = new System.Windows.Forms.Padding(4);
             this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(370, 29);
+            this.txbPassWord.Size = new System.Drawing.Size(261, 29);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txbPassWord.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPassWord_KeyPress);
@@ -131,7 +131,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(281, 354);
+            this.pictureBox1.Size = new System.Drawing.Size(279, 354);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -140,9 +140,9 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Blue;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 2);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(257, 144);
+            this.pictureBox2.Size = new System.Drawing.Size(259, 144);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
@@ -153,7 +153,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(12, 152);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(257, 190);
+            this.pictureBox3.Size = new System.Drawing.Size(259, 190);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 15;
             this.pictureBox3.TabStop = false;
@@ -163,7 +163,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(734, 5);
+            this.btnClose.Location = new System.Drawing.Point(577, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,7 +193,7 @@
             this.btnLogin.Location = new System.Drawing.Point(332, 240);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(370, 40);
+            this.btnLogin.Size = new System.Drawing.Size(261, 40);
             this.btnLogin.TabIndex = 22;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click_1);
@@ -205,7 +205,7 @@
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(332, 58);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(370, 10);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(210, 10);
             this.bunifuSeparator1.TabIndex = 28;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -231,7 +231,7 @@
             this.btnExit_.Location = new System.Drawing.Point(332, 294);
             this.btnExit_.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnExit_.Name = "btnExit_";
-            this.btnExit_.Size = new System.Drawing.Size(370, 40);
+            this.btnExit_.Size = new System.Drawing.Size(261, 40);
             this.btnExit_.TabIndex = 29;
             this.btnExit_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExit_.Click += new System.EventHandler(this.btnExit__Click);
@@ -243,7 +243,7 @@
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(332, 220);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
-            this.bunifuSeparator2.Size = new System.Drawing.Size(370, 10);
+            this.bunifuSeparator2.Size = new System.Drawing.Size(261, 10);
             this.bunifuSeparator2.TabIndex = 30;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
@@ -253,7 +253,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(755, 354);
+            this.ClientSize = new System.Drawing.Size(606, 354);
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.btnExit_);
             this.Controls.Add(this.bunifuSeparator1);
@@ -268,7 +268,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";

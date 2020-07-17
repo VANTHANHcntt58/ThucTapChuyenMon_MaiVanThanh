@@ -106,7 +106,7 @@
             this.groupBox3.Controls.Add(this.btnCancel);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox3.Location = new System.Drawing.Point(5, 53);
+            this.groupBox3.Location = new System.Drawing.Point(12, 56);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(444, 94);
             this.groupBox3.TabIndex = 32;
@@ -212,9 +212,9 @@
             this.groupRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupRoom.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupRoom.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupRoom.Location = new System.Drawing.Point(5, 149);
+            this.groupRoom.Location = new System.Drawing.Point(475, 53);
             this.groupRoom.Name = "groupRoom";
-            this.groupRoom.Size = new System.Drawing.Size(444, 199);
+            this.groupRoom.Size = new System.Drawing.Size(624, 137);
             this.groupRoom.TabIndex = 33;
             this.groupRoom.TabStop = false;
             this.groupRoom.Text = "Thông tin phòng";
@@ -235,7 +235,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(247, 133);
+            this.label2.Location = new System.Drawing.Point(437, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 20);
             this.label2.TabIndex = 45;
@@ -275,7 +275,7 @@
             this.txbLimitPerson.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbLimitPerson.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbLimitPerson.isPassword = false;
-            this.txbLimitPerson.Location = new System.Drawing.Point(247, 156);
+            this.txbLimitPerson.Location = new System.Drawing.Point(437, 100);
             this.txbLimitPerson.Margin = new System.Windows.Forms.Padding(0);
             this.txbLimitPerson.Name = "txbLimitPerson";
             this.txbLimitPerson.Size = new System.Drawing.Size(175, 29);
@@ -287,7 +287,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label13.Location = new System.Drawing.Point(22, 133);
+            this.label13.Location = new System.Drawing.Point(437, 21);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 20);
             this.label13.TabIndex = 28;
@@ -322,7 +322,7 @@
             this.comboBoxStatusRoom.ForeColor = System.Drawing.Color.SeaGreen;
             this.comboBoxStatusRoom.FormattingEnabled = true;
             this.comboBoxStatusRoom.ItemHeight = 23;
-            this.comboBoxStatusRoom.Location = new System.Drawing.Point(22, 156);
+            this.comboBoxStatusRoom.Location = new System.Drawing.Point(441, 44);
             this.comboBoxStatusRoom.Name = "comboBoxStatusRoom";
             this.comboBoxStatusRoom.Size = new System.Drawing.Size(175, 29);
             this.comboBoxStatusRoom.Style = MetroFramework.MetroColorStyle.Green;
@@ -394,9 +394,9 @@
             this.groupBox1.Controls.Add(this.bindingRoom);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox1.Location = new System.Drawing.Point(455, 53);
+            this.groupBox1.Location = new System.Drawing.Point(12, 196);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(652, 435);
+            this.groupBox1.Size = new System.Drawing.Size(563, 214);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Phòng";
@@ -435,7 +435,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewRoom.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewRoom.GridColor = System.Drawing.Color.White;
             this.dataGridViewRoom.Location = new System.Drawing.Point(3, 68);
             this.dataGridViewRoom.Name = "dataGridViewRoom";
@@ -453,7 +452,7 @@
             this.dataGridViewRoom.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewRoom.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewRoom.Size = new System.Drawing.Size(646, 364);
+            this.dataGridViewRoom.Size = new System.Drawing.Size(560, 144);
             this.dataGridViewRoom.TabIndex = 28;
             // 
             // colIDRoom
@@ -553,7 +552,7 @@
             this.bindingRoom.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingRoom.Name = "bindingRoom";
             this.bindingRoom.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingRoom.Size = new System.Drawing.Size(646, 43);
+            this.bindingRoom.Size = new System.Drawing.Size(557, 43);
             this.bindingRoom.TabIndex = 29;
             this.bindingRoom.Text = "binding";
             // 
@@ -593,7 +592,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 25);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -670,7 +668,7 @@
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox4.Location = new System.Drawing.Point(5, 350);
+            this.groupBox4.Location = new System.Drawing.Point(594, 264);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(444, 138);
             this.groupBox4.TabIndex = 58;
@@ -789,7 +787,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(1090, 5);
+            this.btnClose.Location = new System.Drawing.Point(1081, 5);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -803,7 +801,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1111, 496);
+            this.ClientSize = new System.Drawing.Size(1102, 413);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.labelName);
@@ -813,7 +811,6 @@
             this.Controls.Add(this.btnClose);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "fRoom";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

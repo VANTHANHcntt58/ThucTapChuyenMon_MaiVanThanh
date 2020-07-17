@@ -290,7 +290,6 @@
             this.btnAddCustomer.Size = new System.Drawing.Size(203, 40);
             this.btnAddCustomer.TabIndex = 47;
             this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
             // 
             // groupBox1
             // 
@@ -400,7 +399,6 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fReceiveRoomDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fReceiveRoomDetails";

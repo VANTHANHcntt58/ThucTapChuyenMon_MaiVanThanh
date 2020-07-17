@@ -183,6 +183,12 @@
     <Compile Include="fPrintBill.Designer.cs">
       <DependentUpon>fPrintBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="fPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPassword.designer.cs">
+      <DependentUpon>fPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="fReceiveRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,6 +258,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fPrintBill.resx">
       <DependentUpon>fPrintBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPassword.resx">
+      <DependentUpon>fPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fReceiveRoom.resx">
       <DependentUpon>fReceiveRoom.cs</DependentUpon>
@@ -326,6 +335,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Procs.sql" />
+    <None Include="Resources\bed.png" />
     <Content Include="Tables.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

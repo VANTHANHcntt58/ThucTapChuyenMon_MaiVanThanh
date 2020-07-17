@@ -48,6 +48,7 @@
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txbPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dpkDateOfBirth = new Bunifu.Framework.UI.BunifuDatepicker();
@@ -61,7 +62,6 @@
             this.cbSex = new MetroFramework.Controls.MetroComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.txbPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.txbIDCard = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -119,7 +119,7 @@
             this.groupBox6.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox6.Location = new System.Drawing.Point(7, 52);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(238, 358);
+            this.groupBox6.Size = new System.Drawing.Size(697, 146);
             this.groupBox6.TabIndex = 34;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Thông tin nhận phòng";
@@ -142,7 +142,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(18, 304);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(469, 96);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(203, 40);
@@ -161,7 +161,7 @@
             this.txbDays.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txbDays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txbDays.isPassword = false;
-            this.txbDays.Location = new System.Drawing.Point(18, 263);
+            this.txbDays.Location = new System.Drawing.Point(469, 51);
             this.txbDays.Margin = new System.Windows.Forms.Padding(4);
             this.txbDays.Name = "txbDays";
             this.txbDays.Size = new System.Drawing.Size(203, 29);
@@ -173,7 +173,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(15, 239);
+            this.label4.Location = new System.Drawing.Point(465, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 20);
             this.label4.TabIndex = 56;
@@ -185,7 +185,7 @@
             this.cbRoomType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbRoomType.FormattingEnabled = true;
             this.cbRoomType.ItemHeight = 23;
-            this.cbRoomType.Location = new System.Drawing.Point(18, 101);
+            this.cbRoomType.Location = new System.Drawing.Point(246, 49);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(203, 29);
             this.cbRoomType.Style = MetroFramework.MetroColorStyle.Green;
@@ -202,7 +202,7 @@
             this.dpkDateCheckOut.ForeColor = System.Drawing.Color.White;
             this.dpkDateCheckOut.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkDateCheckOut.FormatCustom = null;
-            this.dpkDateCheckOut.Location = new System.Drawing.Point(19, 207);
+            this.dpkDateCheckOut.Location = new System.Drawing.Point(248, 105);
             this.dpkDateCheckOut.Margin = new System.Windows.Forms.Padding(14, 21, 14, 21);
             this.dpkDateCheckOut.Name = "dpkDateCheckOut";
             this.dpkDateCheckOut.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -216,7 +216,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label15.Location = new System.Drawing.Point(17, 82);
+            this.label15.Location = new System.Drawing.Point(242, 25);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(111, 20);
             this.label15.TabIndex = 52;
@@ -229,7 +229,7 @@
             this.dpkDateCheckIn.ForeColor = System.Drawing.Color.White;
             this.dpkDateCheckIn.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dpkDateCheckIn.FormatCustom = null;
-            this.dpkDateCheckIn.Location = new System.Drawing.Point(19, 155);
+            this.dpkDateCheckIn.Location = new System.Drawing.Point(20, 107);
             this.dpkDateCheckIn.Margin = new System.Windows.Forms.Padding(9, 13, 9, 13);
             this.dpkDateCheckIn.Name = "dpkDateCheckIn";
             this.dpkDateCheckIn.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -272,7 +272,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label19.Location = new System.Drawing.Point(14, 188);
+            this.label19.Location = new System.Drawing.Point(242, 86);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(69, 20);
             this.label19.TabIndex = 34;
@@ -283,7 +283,7 @@
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label21.Location = new System.Drawing.Point(14, 134);
+            this.label21.Location = new System.Drawing.Point(14, 86);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(83, 20);
             this.label21.TabIndex = 32;
@@ -295,7 +295,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(690, 4);
+            this.btnClose.Location = new System.Drawing.Point(697, 4);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -322,7 +322,7 @@
             this.btnClose_.IdleFillColor = System.Drawing.Color.White;
             this.btnClose_.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btnClose_.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.Location = new System.Drawing.Point(489, 368);
+            this.btnClose_.Location = new System.Drawing.Point(469, 190);
             this.btnClose_.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClose_.Name = "btnClose_";
             this.btnClose_.Size = new System.Drawing.Size(203, 40);
@@ -332,6 +332,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnClose_);
+            this.groupBox2.Controls.Add(this.txbPhoneNumber);
             this.groupBox2.Controls.Add(this.bunifuThinButton23);
             this.groupBox2.Controls.Add(this.bunifuThinButton21);
             this.groupBox2.Controls.Add(this.dpkDateOfBirth);
@@ -345,7 +347,6 @@
             this.groupBox2.Controls.Add(this.cbSex);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.txbPhoneNumber);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.txbIDCard);
             this.groupBox2.Controls.Add(this.label1);
@@ -354,12 +355,29 @@
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox2.Location = new System.Drawing.Point(249, 52);
+            this.groupBox2.Location = new System.Drawing.Point(7, 204);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(453, 310);
+            this.groupBox2.Size = new System.Drawing.Size(695, 238);
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
+            // 
+            // txbPhoneNumber
+            // 
+            this.txbPhoneNumber.BorderColorFocused = System.Drawing.Color.DarkBlue;
+            this.txbPhoneNumber.BorderColorIdle = System.Drawing.Color.DarkBlue;
+            this.txbPhoneNumber.BorderColorMouseHover = System.Drawing.Color.DarkBlue;
+            this.txbPhoneNumber.BorderThickness = 1;
+            this.txbPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txbPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbPhoneNumber.isPassword = false;
+            this.txbPhoneNumber.Location = new System.Drawing.Point(469, 152);
+            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.txbPhoneNumber.Name = "txbPhoneNumber";
+            this.txbPhoneNumber.Size = new System.Drawing.Size(203, 29);
+            this.txbPhoneNumber.TabIndex = 53;
+            this.txbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuThinButton23
             // 
@@ -379,7 +397,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(240, 263);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(238, 190);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(203, 40);
@@ -405,7 +423,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(10, 263);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(8, 190);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(203, 40);
@@ -451,7 +469,7 @@
             "Tây Ban Nha",
             "Ý",
             "Khác"});
-            this.cbNationality.Location = new System.Drawing.Point(240, 207);
+            this.cbNationality.Location = new System.Drawing.Point(469, 102);
             this.cbNationality.Name = "cbNationality";
             this.cbNationality.Size = new System.Drawing.Size(203, 29);
             this.cbNationality.Style = MetroFramework.MetroColorStyle.Green;
@@ -566,7 +584,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label12.Location = new System.Drawing.Point(238, 182);
+            this.label12.Location = new System.Drawing.Point(467, 77);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(75, 20);
             this.label12.TabIndex = 29;
@@ -583,30 +601,12 @@
             this.label13.TabIndex = 28;
             this.label13.Text = "Giới tính:";
             // 
-            // txbPhoneNumber
-            // 
-            this.txbPhoneNumber.BorderColorFocused = System.Drawing.Color.DarkBlue;
-            this.txbPhoneNumber.BorderColorIdle = System.Drawing.Color.DarkBlue;
-            this.txbPhoneNumber.BorderColorMouseHover = System.Drawing.Color.DarkBlue;
-            this.txbPhoneNumber.BorderThickness = 1;
-            this.txbPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txbPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbPhoneNumber.isPassword = false;
-            this.txbPhoneNumber.Location = new System.Drawing.Point(10, 207);
-            this.txbPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.txbPhoneNumber.Name = "txbPhoneNumber";
-            this.txbPhoneNumber.Size = new System.Drawing.Size(203, 29);
-            this.txbPhoneNumber.TabIndex = 24;
-            this.txbPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txbPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhoneNumber_KeyPress);
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label14.Location = new System.Drawing.Point(8, 187);
+            this.label14.Location = new System.Drawing.Point(467, 134);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(100, 20);
             this.label14.TabIndex = 26;
@@ -673,15 +673,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(709, 414);
-            this.Controls.Add(this.btnClose_);
+            this.ClientSize = new System.Drawing.Size(716, 456);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fBookRoomDetails";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fReceiveRoomDetails";
@@ -717,7 +715,6 @@
         private MetroFramework.Controls.MetroComboBox cbSex;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txbPhoneNumber;
         private System.Windows.Forms.Label label14;
         private Bunifu.Framework.UI.BunifuMetroTextbox txbIDCard;
         private System.Windows.Forms.Label label1;
@@ -734,5 +731,6 @@
         private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuMetroTextbox txbPhoneNumber;
     }
 }

@@ -356,5 +356,7 @@ namespace HotelManager
             LoadFullCustomer(GetFullCustomer());
         }
         #endregion
+
+       
     }
 }

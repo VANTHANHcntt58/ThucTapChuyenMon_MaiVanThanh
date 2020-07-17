@@ -87,9 +87,9 @@
             this.label6.ForeColor = System.Drawing.Color.DarkBlue;
             this.label6.Location = new System.Drawing.Point(8, 8);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(204, 37);
+            this.label6.Size = new System.Drawing.Size(270, 37);
             this.label6.TabIndex = 63;
-            this.label6.Text = "Quyền Truy Cập";
+            this.label6.Text = "Phân Quyền Truy Cập";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupService
@@ -98,9 +98,9 @@
             this.groupService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupService.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupService.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupService.Location = new System.Drawing.Point(15, 157);
+            this.groupService.Location = new System.Drawing.Point(5, 48);
             this.groupService.Name = "groupService";
-            this.groupService.Size = new System.Drawing.Size(250, 337);
+            this.groupService.Size = new System.Drawing.Size(250, 231);
             this.groupService.TabIndex = 65;
             this.groupService.TabStop = false;
             this.groupService.Text = "Quyền hiện tại";
@@ -152,7 +152,7 @@
             this.dataGridViewAccessNow.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewAccessNow.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewAccessNow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewAccessNow.Size = new System.Drawing.Size(244, 309);
+            this.dataGridViewAccessNow.Size = new System.Drawing.Size(244, 203);
             this.dataGridViewAccessNow.TabIndex = 29;
             // 
             // colAccessNow
@@ -177,9 +177,9 @@
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox1.Location = new System.Drawing.Point(352, 157);
+            this.groupBox1.Location = new System.Drawing.Point(342, 48);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 337);
+            this.groupBox1.Size = new System.Drawing.Size(250, 231);
             this.groupBox1.TabIndex = 66;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Các quyền còn lại";
@@ -231,7 +231,7 @@
             this.dataGridViewAccessRest.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewAccessRest.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewAccessRest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewAccessRest.Size = new System.Drawing.Size(244, 309);
+            this.dataGridViewAccessRest.Size = new System.Drawing.Size(244, 203);
             this.dataGridViewAccessRest.TabIndex = 30;
             // 
             // dataGridViewTextBoxColumn1
@@ -268,7 +268,7 @@
             this.groupBox3.Controls.Add(this.btnDelete);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox3.Location = new System.Drawing.Point(15, 52);
+            this.groupBox3.Location = new System.Drawing.Point(2, 285);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(587, 105);
             this.groupBox3.TabIndex = 67;
@@ -425,7 +425,7 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(291, 213);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(281, 63);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(39, 40);
@@ -451,7 +451,7 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(291, 263);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(281, 113);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
             this.bunifuThinButton23.Size = new System.Drawing.Size(39, 40);
@@ -477,7 +477,7 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(291, 412);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(281, 213);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(39, 40);
@@ -503,7 +503,7 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
             this.btnSearch.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btnSearch.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.Location = new System.Drawing.Point(291, 362);
+            this.btnSearch.Location = new System.Drawing.Point(281, 163);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(39, 40);
@@ -517,7 +517,7 @@
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
             this.btnClose.ImageActive = null;
-            this.btnClose.Location = new System.Drawing.Point(586, 12);
+            this.btnClose.Location = new System.Drawing.Point(573, 12);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(16, 16);
             this.btnClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -531,7 +531,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(617, 506);
+            this.ClientSize = new System.Drawing.Size(604, 401);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.bunifuThinButton22);
             this.Controls.Add(this.bunifuThinButton23);
@@ -544,7 +544,6 @@
             this.Controls.Add(this.btnClose);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Name = "fAccess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
