@@ -48,11 +48,11 @@
             this.colIdRest = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.cbbStaffType = new MetroFramework.Controls.MetroComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.bunifuThinButton25 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnInsertStaffType = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.cbbStaffType = new MetroFramework.Controls.MetroComboBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -130,7 +130,7 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewAccessNow.DefaultCellStyle = dataGridViewCellStyle2;
@@ -209,7 +209,7 @@
             dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle5.ForeColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewAccessRest.DefaultCellStyle = dataGridViewCellStyle5;
@@ -274,6 +274,34 @@
             this.groupBox3.TabIndex = 67;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Loại Nhân Viên";
+            // 
+            // cbbStaffType
+            // 
+            this.cbbStaffType.BackColor = System.Drawing.Color.White;
+            this.cbbStaffType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbbStaffType.FormattingEnabled = true;
+            this.cbbStaffType.ItemHeight = 23;
+            this.cbbStaffType.Location = new System.Drawing.Point(19, 54);
+            this.cbbStaffType.Name = "cbbStaffType";
+            this.cbbStaffType.Size = new System.Drawing.Size(175, 29);
+            this.cbbStaffType.Style = MetroFramework.MetroColorStyle.Blue;
+            this.cbbStaffType.TabIndex = 51;
+            this.cbbStaffType.UseCustomBackColor = true;
+            this.cbbStaffType.UseCustomForeColor = true;
+            this.cbbStaffType.UseSelectable = true;
+            this.cbbStaffType.UseStyleColors = true;
+            this.cbbStaffType.SelectedIndexChanged += new System.EventHandler(this.cbbStaffType_SelectedIndexChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label5.Location = new System.Drawing.Point(15, 29);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 20);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Tên loại nhân viên:";
             // 
             // bunifuThinButton25
             // 
@@ -352,34 +380,6 @@
             this.btnUpdate.TabIndex = 52;
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // cbbStaffType
-            // 
-            this.cbbStaffType.BackColor = System.Drawing.Color.White;
-            this.cbbStaffType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbbStaffType.FormattingEnabled = true;
-            this.cbbStaffType.ItemHeight = 23;
-            this.cbbStaffType.Location = new System.Drawing.Point(19, 54);
-            this.cbbStaffType.Name = "cbbStaffType";
-            this.cbbStaffType.Size = new System.Drawing.Size(175, 29);
-            this.cbbStaffType.Style = MetroFramework.MetroColorStyle.Green;
-            this.cbbStaffType.TabIndex = 51;
-            this.cbbStaffType.UseCustomBackColor = true;
-            this.cbbStaffType.UseCustomForeColor = true;
-            this.cbbStaffType.UseSelectable = true;
-            this.cbbStaffType.UseStyleColors = true;
-            this.cbbStaffType.SelectedIndexChanged += new System.EventHandler(this.cbbStaffType_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label5.Location = new System.Drawing.Point(15, 29);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 20);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Tên loại nhân viên:";
             // 
             // btnDelete
             // 

@@ -164,7 +164,7 @@
             this.txbNationality.Location = new System.Drawing.Point(216, 211);
             this.txbNationality.Name = "txbNationality";
             this.txbNationality.Size = new System.Drawing.Size(179, 29);
-            this.txbNationality.Style = MetroFramework.MetroColorStyle.Green;
+            this.txbNationality.Style = MetroFramework.MetroColorStyle.Blue;
             this.txbNationality.TabIndex = 58;
             this.txbNationality.UseCustomBackColor = true;
             this.txbNationality.UseCustomForeColor = true;
@@ -253,7 +253,7 @@
             this.comboBoxSex.Location = new System.Drawing.Point(12, 267);
             this.comboBoxSex.Name = "comboBoxSex";
             this.comboBoxSex.Size = new System.Drawing.Size(175, 29);
-            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxSex.Style = MetroFramework.MetroColorStyle.Blue;
             this.comboBoxSex.TabIndex = 4;
             this.comboBoxSex.UseCustomBackColor = true;
             this.comboBoxSex.UseCustomForeColor = true;
@@ -270,7 +270,7 @@
             this.comboBoxCustomerType.Location = new System.Drawing.Point(12, 211);
             this.comboBoxCustomerType.Name = "comboBoxCustomerType";
             this.comboBoxCustomerType.Size = new System.Drawing.Size(175, 29);
-            this.comboBoxCustomerType.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboBoxCustomerType.Style = MetroFramework.MetroColorStyle.Blue;
             this.comboBoxCustomerType.TabIndex = 3;
             this.comboBoxCustomerType.UseCustomBackColor = true;
             this.comboBoxCustomerType.UseCustomForeColor = true;
@@ -284,7 +284,7 @@
             this.comboboxID.Location = new System.Drawing.Point(12, 44);
             this.comboboxID.Name = "comboboxID";
             this.comboboxID.Size = new System.Drawing.Size(175, 29);
-            this.comboboxID.Style = MetroFramework.MetroColorStyle.Green;
+            this.comboboxID.Style = MetroFramework.MetroColorStyle.Blue;
             this.comboboxID.TabIndex = 0;
             this.comboboxID.UseSelectable = true;
             // 
@@ -413,16 +413,16 @@
             this.dataGridViewCustomer.AllowUserToDeleteRows = false;
             this.dataGridViewCustomer.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Blue;
             this.dataGridViewCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewCustomer.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
@@ -443,7 +443,7 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkBlue;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewCustomer.DefaultCellStyle = dataGridViewCellStyle3;
@@ -455,7 +455,7 @@
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Blue;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCustomer.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
@@ -709,7 +709,7 @@
             this.cbCustomerSearch.Location = new System.Drawing.Point(16, 68);
             this.cbCustomerSearch.Name = "cbCustomerSearch";
             this.cbCustomerSearch.Size = new System.Drawing.Size(175, 29);
-            this.cbCustomerSearch.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbCustomerSearch.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbCustomerSearch.TabIndex = 50;
             this.cbCustomerSearch.UseCustomBackColor = true;
             this.cbCustomerSearch.UseCustomForeColor = true;

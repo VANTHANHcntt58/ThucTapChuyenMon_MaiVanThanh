@@ -402,7 +402,7 @@
             this.cbService.Location = new System.Drawing.Point(17, 97);
             this.cbService.Name = "cbService";
             this.cbService.Size = new System.Drawing.Size(203, 29);
-            this.cbService.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbService.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbService.TabIndex = 54;
             this.cbService.UseCustomBackColor = true;
             this.cbService.UseCustomForeColor = true;
@@ -456,7 +456,7 @@
             this.cbServiceType.Location = new System.Drawing.Point(17, 44);
             this.cbServiceType.Name = "cbServiceType";
             this.cbServiceType.Size = new System.Drawing.Size(203, 29);
-            this.cbServiceType.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbServiceType.Style = MetroFramework.MetroColorStyle.Blue;
             this.cbServiceType.TabIndex = 52;
             this.cbServiceType.UseCustomBackColor = true;
             this.cbServiceType.UseCustomForeColor = true;

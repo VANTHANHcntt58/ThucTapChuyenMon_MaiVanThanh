@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace HotelManager
 {
-    public partial class fManagement: Form
+    public partial class fManagement : Form
     {
         private string userName;
         public fManagement(string userName)
@@ -29,22 +29,22 @@ namespace HotelManager
         {
 
             panelLeft.Width = 177;
-            
+
         }
         private bool CheckAccess(string nameform)
         {
             return AccessDAO.Instance.CheckAccess(userName, nameform);
         }
-       
+
         private void btnClose_Click_1(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();
         }
 
- 
 
-       
+
+
         private void btnNavigationPanel_Click_1(object sender, EventArgs e)
         {
             if (panelLeft.Width == 42)
@@ -65,13 +65,13 @@ namespace HotelManager
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
-            
+
             this.Hide();
             fLogin login = new fLogin();
             login.ShowDialog();
         }
 
-        
+
 
         private void titleSendRoom_Click(object sender, EventArgs e)
         {
@@ -81,12 +81,12 @@ namespace HotelManager
             this.Show();
         }
 
-      /*  private void metroTile17_Click(object sender, EventArgs e)
-        {
-           
-        }*/
+        /*  private void metroTile17_Click(object sender, EventArgs e)
+          {
 
-     
+          }*/
+
+
         private void metroTile8_Click(object sender, EventArgs e)
         {
             if (CheckAccess("fstaff"))
@@ -97,10 +97,10 @@ namespace HotelManager
                 this.Show();
             }
             else
-                MessageBox.Show( "Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
-        
+
         private void titlePay_Click(object sender, EventArgs e)
         {
             if (CheckAccess("fUseService"))
@@ -213,5 +213,18 @@ namespace HotelManager
             fPassword.ShowDialog();
             this.Show();
         }
-    }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            if (CheckAccess("fReport"))
+            {
+                this.Hide();
+                fReport fReport = new fReport();
+                fReport.ShowDialog();
+                this.Show();
+            }
+            else
+                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+    }        
 }

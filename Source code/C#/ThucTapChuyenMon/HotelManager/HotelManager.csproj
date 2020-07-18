@@ -83,6 +83,7 @@
     <Compile Include="DAO\ParameterDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDAO.cs" />
     <Compile Include="DAO\ReceiveRoomDetailsDAO.cs" />
+    <Compile Include="DAO\ReportDAO.cs" />
     <Compile Include="DAO\RoomDAO.cs" />
     <Compile Include="DAO\AccountTypeDAO.cs" />
     <Compile Include="DAO\RoomTypeDAO.cs" />
@@ -201,6 +202,12 @@
     <Compile Include="fReceiveRoomDetails.Designer.cs">
       <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="fReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fReport.designer.cs">
+      <DependentUpon>fReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fReceiveRoomDetails.resx">
       <DependentUpon>fReceiveRoomDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fReport.resx">
+      <DependentUpon>fReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRoom.resx">
       <DependentUpon>fRoom.cs</DependentUpon>
