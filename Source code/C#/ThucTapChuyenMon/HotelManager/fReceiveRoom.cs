@@ -36,7 +36,31 @@ namespace HotelManager
         {
             LoadListRoomType();
             LoadReceiveRoomInfo();
+            LoadSurcharge();
         }
+
+        private void LoadSurcharge()
+        {
+            string query = "select * from Parameter";
+            DataTable data = DataProvider.Instance.ExecuteQuery(query);
+            foreach (DataRow item in data.Rows)
+            {
+                int id = 0;
+                ListViewItem listViewItem = new ListViewItem(id.ToString());
+                id++;
+
+                ListViewItem.ListViewSubItem subItem1 = new ListViewItem.ListViewSubItem(listViewItem, item["Name"].ToString());
+                ListViewItem.ListViewSubItem subItem2 = new ListViewItem.ListViewSubItem(listViewItem, ((double)item["Value"]).ToString());
+                ListViewItem.ListViewSubItem subItem3 = new ListViewItem.ListViewSubItem(listViewItem, (item["Describe"]).ToString());
+
+                listViewItem.SubItems.Add(subItem1);
+                listViewItem.SubItems.Add(subItem2);
+                listViewItem.SubItems.Add(subItem3);
+
+                listViewSurcharge.Items.Add(listViewItem);
+            }            
+        }
+
         public void LoadListRoomType()
         {
             List<RoomType> rooms = RoomTypeDAO.Instance.LoadListRoomType();

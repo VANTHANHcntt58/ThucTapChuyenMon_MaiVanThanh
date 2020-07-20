@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUseService));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fUseService));
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -138,6 +138,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.White;
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.pictureBox6);
             this.groupBox3.Controls.Add(this.lblRoomType5);
@@ -193,7 +194,7 @@
             // 
             // color5
             // 
-            this.color5.BackColor = System.Drawing.Color.Gray;
+            this.color5.BackColor = System.Drawing.Color.Purple;
             this.color5.Location = new System.Drawing.Point(246, 94);
             this.color5.Name = "color5";
             this.color5.Size = new System.Drawing.Size(97, 15);
@@ -283,6 +284,7 @@
             // flowLayoutRooms
             // 
             this.flowLayoutRooms.AutoScroll = true;
+            this.flowLayoutRooms.BackColor = System.Drawing.Color.DimGray;
             this.flowLayoutRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutRooms.Location = new System.Drawing.Point(3, 152);
             this.flowLayoutRooms.Name = "flowLayoutRooms";
@@ -304,9 +306,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Maroon;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(9, 6);
+            this.label2.ForeColor = System.Drawing.Color.AliceBlue;
+            this.label2.Location = new System.Drawing.Point(409, 2);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(397, 37);
             this.label2.TabIndex = 32;
@@ -854,6 +857,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1255, 615);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBillRoom);

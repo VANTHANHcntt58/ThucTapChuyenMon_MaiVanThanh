@@ -11,8 +11,10 @@ namespace HotelManager.DAO
     public class DataProvider
     {
         private static DataProvider instance;
-        private string connectionStr = @"Data Source=DESKTOP-56LEIVI;Initial Catalog=HotelManagement;Integrated Security=True";// user: thanh, pass: 123456
+        //private string connectionStr = @"Data Source=DESKTOP-56LEIVI;Initial Catalog=HotelManagement;Integrated Security=True";// user: thanh, pass: 123456
         //private string connectionStr = @"Data Source=DESKTOP-56LEIVI;Initial Catalog=HomstayManagement;Integrated Security=True";
+        private string connectionStr = @"Data Source=DESKTOP-56LEIVI;Initial Catalog=QL_HomeStays;Integrated Security=True";
+
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

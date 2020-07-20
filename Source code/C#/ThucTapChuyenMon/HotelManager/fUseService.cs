@@ -160,8 +160,7 @@ namespace HotelManager
                 DrawControl(item, button);
                 
                 flowLayoutRooms.Controls.Add(button);
-
-                //BillDAO.Instance.UpdateRoomPrice(item.Id);
+                                
             }
         }
 

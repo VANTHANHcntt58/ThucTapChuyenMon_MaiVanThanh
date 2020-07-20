@@ -17,10 +17,15 @@ namespace HotelManager
         public fPassword(string userName)
         {
             InitializeComponent();
-            //LoadProfile(userName);
+            LoadPassword(userName);
 
         }
         string Password;
+        private void LoadPassword(string username)
+        {
+            Account staff = AccountDAO.Instance.LoadStaffInforByUserName(username);
+            Password = staff.PassWord;
+        }
 
         public void UpdatePassword(string username, string password)
         {
@@ -42,7 +47,7 @@ namespace HotelManager
                     UpdatePassword(txbUserName.Text, txbNewPass.Text);
                     MessageBox.Show( "Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txbPass.Text = txbNewPass.Text = txbReNewPass.Text = String.Empty;
-                    //LoadProfile(txbUserName.Text);
+                    LoadPassword(txbUserName.Text);
                 }
                 else
                 {
@@ -57,7 +62,8 @@ namespace HotelManager
             }   
         }
 
-    
+      
+
         private void txbPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))

@@ -40,11 +40,17 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDetails = new Bunifu.Framework.UI.BunifuThinButton2();
             this.dataGridViewReceiveRoom = new System.Windows.Forms.DataGridView();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnReceiveRoom = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label5 = new System.Windows.Forms.Label();
             this.txbIDBookRoom = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.txbRoomName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,13 +73,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.cbRoomType = new MetroFramework.Controls.MetroComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnClose_ = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnAddCustomer = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnReceiveRoom = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDetails = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.listViewSurcharge = new System.Windows.Forms.ListView();
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewReceiveRoom)).BeginInit();
@@ -82,6 +88,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -119,9 +126,9 @@
             this.groupBox4.Controls.Add(this.panel2);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox4.Location = new System.Drawing.Point(7, 341);
+            this.groupBox4.Location = new System.Drawing.Point(7, 494);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(978, 160);
+            this.groupBox4.Size = new System.Drawing.Size(1003, 160);
             this.groupBox4.TabIndex = 31;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách nhận phòng trong ngày";
@@ -130,12 +137,37 @@
             // 
             this.panel2.Controls.Add(this.btnDetails);
             this.panel2.Controls.Add(this.dataGridViewReceiveRoom);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(3, 25);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(972, 132);
+            this.panel2.Size = new System.Drawing.Size(997, 132);
             this.panel2.TabIndex = 39;
+            // 
+            // btnDetails
+            // 
+            this.btnDetails.ActiveBorderThickness = 1;
+            this.btnDetails.ActiveCornerRadius = 20;
+            this.btnDetails.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnDetails.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDetails.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnDetails.BackColor = System.Drawing.Color.White;
+            this.btnDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetails.BackgroundImage")));
+            this.btnDetails.ButtonText = "Xem Chi Tiết";
+            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDetails.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnDetails.IdleBorderThickness = 1;
+            this.btnDetails.IdleCornerRadius = 20;
+            this.btnDetails.IdleFillColor = System.Drawing.Color.White;
+            this.btnDetails.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnDetails.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnDetails.Location = new System.Drawing.Point(232, 493);
+            this.btnDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnDetails.Name = "btnDetails";
+            this.btnDetails.Size = new System.Drawing.Size(203, 40);
+            this.btnDetails.TabIndex = 48;
+            this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
             // 
             // dataGridViewReceiveRoom
             // 
@@ -167,6 +199,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewReceiveRoom.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewReceiveRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewReceiveRoom.GridColor = System.Drawing.Color.White;
             this.dataGridViewReceiveRoom.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewReceiveRoom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -191,7 +224,7 @@
             this.dataGridViewReceiveRoom.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridViewReceiveRoom.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.dataGridViewReceiveRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewReceiveRoom.Size = new System.Drawing.Size(962, 125);
+            this.dataGridViewReceiveRoom.Size = new System.Drawing.Size(997, 132);
             this.dataGridViewReceiveRoom.StandardTab = true;
             this.dataGridViewReceiveRoom.TabIndex = 7;
             // 
@@ -203,12 +236,116 @@
             this.groupBox5.Controls.Add(this.btnReceiveRoom);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox5.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox5.Location = new System.Drawing.Point(711, 211);
+            this.groupBox5.Location = new System.Drawing.Point(698, 209);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(281, 124);
             this.groupBox5.TabIndex = 45;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Chức năng";
+            // 
+            // btnClose_
+            // 
+            this.btnClose_.ActiveBorderThickness = 1;
+            this.btnClose_.ActiveCornerRadius = 20;
+            this.btnClose_.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
+            this.btnClose_.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnClose_.BackColor = System.Drawing.Color.White;
+            this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
+            this.btnClose_.ButtonText = "Đóng";
+            this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose_.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnClose_.IdleBorderThickness = 1;
+            this.btnClose_.IdleCornerRadius = 20;
+            this.btnClose_.IdleFillColor = System.Drawing.Color.White;
+            this.btnClose_.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnClose_.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnClose_.Location = new System.Drawing.Point(150, 80);
+            this.btnClose_.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnClose_.Name = "btnClose_";
+            this.btnClose_.Size = new System.Drawing.Size(125, 40);
+            this.btnClose_.TabIndex = 48;
+            this.btnClose_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnClose_.Click += new System.EventHandler(this.btnClose__Click);
+            // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.ActiveBorderThickness = 1;
+            this.btnAddCustomer.ActiveCornerRadius = 20;
+            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
+            this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
+            this.btnAddCustomer.ButtonText = "Thêm Khách Hàng";
+            this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.IdleBorderThickness = 1;
+            this.btnAddCustomer.IdleCornerRadius = 20;
+            this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
+            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnAddCustomer.Location = new System.Drawing.Point(7, 30);
+            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(135, 40);
+            this.btnAddCustomer.TabIndex = 47;
+            this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "Hủy";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnCancel.Location = new System.Drawing.Point(7, 80);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(135, 40);
+            this.btnCancel.TabIndex = 46;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnReceiveRoom
+            // 
+            this.btnReceiveRoom.ActiveBorderThickness = 1;
+            this.btnReceiveRoom.ActiveCornerRadius = 20;
+            this.btnReceiveRoom.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnReceiveRoom.ActiveForecolor = System.Drawing.Color.White;
+            this.btnReceiveRoom.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnReceiveRoom.BackColor = System.Drawing.Color.White;
+            this.btnReceiveRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReceiveRoom.BackgroundImage")));
+            this.btnReceiveRoom.ButtonText = "Nhận Phòng";
+            this.btnReceiveRoom.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReceiveRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReceiveRoom.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnReceiveRoom.IdleBorderThickness = 1;
+            this.btnReceiveRoom.IdleCornerRadius = 20;
+            this.btnReceiveRoom.IdleFillColor = System.Drawing.Color.White;
+            this.btnReceiveRoom.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnReceiveRoom.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnReceiveRoom.Location = new System.Drawing.Point(150, 30);
+            this.btnReceiveRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnReceiveRoom.Name = "btnReceiveRoom";
+            this.btnReceiveRoom.Size = new System.Drawing.Size(124, 40);
+            this.btnReceiveRoom.TabIndex = 45;
+            this.btnReceiveRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnReceiveRoom.Click += new System.EventHandler(this.btnReceiveRoom_Click);
             // 
             // label5
             // 
@@ -246,12 +383,38 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox3.Location = new System.Drawing.Point(7, 55);
+            this.groupBox3.Location = new System.Drawing.Point(2, 64);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(166, 141);
             this.groupBox3.TabIndex = 30;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = "Tìm Kiếm";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnSearch.Location = new System.Drawing.Point(25, 94);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(109, 40);
+            this.btnSearch.TabIndex = 46;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // groupBox6
             // 
@@ -273,7 +436,7 @@
             this.groupBox6.Controls.Add(this.label21);
             this.groupBox6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox6.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox6.Location = new System.Drawing.Point(179, 60);
+            this.groupBox6.Location = new System.Drawing.Point(182, 60);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(510, 275);
             this.groupBox6.TabIndex = 33;
@@ -520,7 +683,7 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.groupBox2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.groupBox2.Location = new System.Drawing.Point(711, 55);
+            this.groupBox2.Location = new System.Drawing.Point(698, 60);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(279, 150);
             this.groupBox2.TabIndex = 46;
@@ -583,162 +746,6 @@
             this.label3.TabIndex = 51;
             this.label3.Text = "Loại phòng:";
             // 
-            // btnClose_
-            // 
-            this.btnClose_.ActiveBorderThickness = 1;
-            this.btnClose_.ActiveCornerRadius = 20;
-            this.btnClose_.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.ActiveForecolor = System.Drawing.Color.White;
-            this.btnClose_.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.BackColor = System.Drawing.Color.White;
-            this.btnClose_.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnClose_.BackgroundImage")));
-            this.btnClose_.ButtonText = "Đóng";
-            this.btnClose_.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose_.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose_.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.IdleBorderThickness = 1;
-            this.btnClose_.IdleCornerRadius = 20;
-            this.btnClose_.IdleFillColor = System.Drawing.Color.White;
-            this.btnClose_.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnClose_.Location = new System.Drawing.Point(150, 80);
-            this.btnClose_.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnClose_.Name = "btnClose_";
-            this.btnClose_.Size = new System.Drawing.Size(111, 40);
-            this.btnClose_.TabIndex = 48;
-            this.btnClose_.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnClose_.Click += new System.EventHandler(this.btnClose__Click);
-            // 
-            // btnAddCustomer
-            // 
-            this.btnAddCustomer.ActiveBorderThickness = 1;
-            this.btnAddCustomer.ActiveCornerRadius = 20;
-            this.btnAddCustomer.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnAddCustomer.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAddCustomer.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnAddCustomer.BackColor = System.Drawing.Color.White;
-            this.btnAddCustomer.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddCustomer.BackgroundImage")));
-            this.btnAddCustomer.ButtonText = "Thêm Khách Hàng";
-            this.btnAddCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAddCustomer.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomer.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnAddCustomer.IdleBorderThickness = 1;
-            this.btnAddCustomer.IdleCornerRadius = 20;
-            this.btnAddCustomer.IdleFillColor = System.Drawing.Color.White;
-            this.btnAddCustomer.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnAddCustomer.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnAddCustomer.Location = new System.Drawing.Point(7, 30);
-            this.btnAddCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(135, 40);
-            this.btnAddCustomer.TabIndex = 47;
-            this.btnAddCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ActiveBorderThickness = 1;
-            this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnCancel.BackColor = System.Drawing.Color.White;
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-            this.btnCancel.ButtonText = "Hủy";
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnCancel.IdleBorderThickness = 1;
-            this.btnCancel.IdleCornerRadius = 20;
-            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-            this.btnCancel.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnCancel.Location = new System.Drawing.Point(7, 80);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(135, 40);
-            this.btnCancel.TabIndex = 46;
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnReceiveRoom
-            // 
-            this.btnReceiveRoom.ActiveBorderThickness = 1;
-            this.btnReceiveRoom.ActiveCornerRadius = 20;
-            this.btnReceiveRoom.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnReceiveRoom.ActiveForecolor = System.Drawing.Color.White;
-            this.btnReceiveRoom.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnReceiveRoom.BackColor = System.Drawing.Color.White;
-            this.btnReceiveRoom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReceiveRoom.BackgroundImage")));
-            this.btnReceiveRoom.ButtonText = "Nhận Phòng";
-            this.btnReceiveRoom.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReceiveRoom.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReceiveRoom.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnReceiveRoom.IdleBorderThickness = 1;
-            this.btnReceiveRoom.IdleCornerRadius = 20;
-            this.btnReceiveRoom.IdleFillColor = System.Drawing.Color.White;
-            this.btnReceiveRoom.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnReceiveRoom.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnReceiveRoom.Location = new System.Drawing.Point(150, 30);
-            this.btnReceiveRoom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnReceiveRoom.Name = "btnReceiveRoom";
-            this.btnReceiveRoom.Size = new System.Drawing.Size(111, 40);
-            this.btnReceiveRoom.TabIndex = 45;
-            this.btnReceiveRoom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnReceiveRoom.Click += new System.EventHandler(this.btnReceiveRoom_Click);
-            // 
-            // btnDetails
-            // 
-            this.btnDetails.ActiveBorderThickness = 1;
-            this.btnDetails.ActiveCornerRadius = 20;
-            this.btnDetails.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnDetails.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDetails.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnDetails.BackColor = System.Drawing.Color.White;
-            this.btnDetails.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDetails.BackgroundImage")));
-            this.btnDetails.ButtonText = "Xem Chi Tiết";
-            this.btnDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDetails.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetails.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnDetails.IdleBorderThickness = 1;
-            this.btnDetails.IdleCornerRadius = 20;
-            this.btnDetails.IdleFillColor = System.Drawing.Color.White;
-            this.btnDetails.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnDetails.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnDetails.Location = new System.Drawing.Point(232, 493);
-            this.btnDetails.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnDetails.Name = "btnDetails";
-            this.btnDetails.Size = new System.Drawing.Size(203, 40);
-            this.btnDetails.TabIndex = 48;
-            this.btnDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDetails.Click += new System.EventHandler(this.btnDetails_Click);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "Tìm Kiếm";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnSearch.Location = new System.Drawing.Point(25, 94);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(109, 40);
-            this.btnSearch.TabIndex = 46;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -754,12 +761,67 @@
             this.btnClose.Zoom = 10;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.listViewSurcharge);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.groupBox1.Location = new System.Drawing.Point(0, 339);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(999, 152);
+            this.groupBox1.TabIndex = 55;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Chính sách phụ thu";
+            // 
+            // listViewSurcharge
+            // 
+            this.listViewSurcharge.BackColor = System.Drawing.Color.White;
+            this.listViewSurcharge.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listViewSurcharge.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader16,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader15});
+            this.listViewSurcharge.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listViewSurcharge.Font = new System.Drawing.Font("Segoe UI", 8.25F);
+            this.listViewSurcharge.ForeColor = System.Drawing.Color.Maroon;
+            this.listViewSurcharge.FullRowSelect = true;
+            this.listViewSurcharge.GridLines = true;
+            this.listViewSurcharge.HideSelection = false;
+            this.listViewSurcharge.Location = new System.Drawing.Point(3, 25);
+            this.listViewSurcharge.Name = "listViewSurcharge";
+            this.listViewSurcharge.Size = new System.Drawing.Size(993, 124);
+            this.listViewSurcharge.TabIndex = 9;
+            this.listViewSurcharge.UseCompatibleStateImageBehavior = false;
+            this.listViewSurcharge.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "STT";
+            this.columnHeader16.Width = 102;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Tên quy định";
+            this.columnHeader11.Width = 245;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Hệ số";
+            this.columnHeader12.Width = 129;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Mô tả";
+            this.columnHeader15.Width = 869;
+            // 
             // fReceiveRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1002, 505);
+            this.ClientSize = new System.Drawing.Size(1002, 712);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
@@ -783,6 +845,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,5 +892,11 @@
         private System.Windows.Forms.Label label6;
         private Bunifu.Framework.UI.BunifuThinButton2 btnClose_;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDetails;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ListView listViewSurcharge;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
     }
 }
