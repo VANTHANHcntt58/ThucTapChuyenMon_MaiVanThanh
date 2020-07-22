@@ -66,17 +66,18 @@
             this.colPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cbBillSearch = new MetroFramework.Controls.MetroComboBox();
             this.txbSearch = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingBill = new System.Windows.Forms.BindingNavigator(this.components);
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEmail = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSeenBill = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCLose1 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
@@ -88,9 +89,9 @@
             this.groupService.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).BeginInit();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingBill)).BeginInit();
             this.bindingBill.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +116,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnEmail);
             this.groupBox2.Controls.Add(this.btnSeenBill);
             this.groupBox2.Controls.Add(this.btnCLose1);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -122,7 +124,7 @@
             this.groupBox2.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox2.Location = new System.Drawing.Point(952, 271);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(275, 140);
+            this.groupBox2.Size = new System.Drawing.Size(275, 175);
             this.groupBox2.TabIndex = 60;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chức Năng";
@@ -406,7 +408,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.DarkBlue;
             this.groupBox1.Location = new System.Drawing.Point(9, 216);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(937, 198);
+            this.groupBox1.Size = new System.Drawing.Size(937, 230);
             this.groupBox1.TabIndex = 59;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh Sách Hoá Đơn";
@@ -464,7 +466,7 @@
             this.dataGridViewBill.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F);
             this.dataGridViewBill.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dataGridViewBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewBill.Size = new System.Drawing.Size(931, 127);
+            this.dataGridViewBill.Size = new System.Drawing.Size(931, 159);
             this.dataGridViewBill.TabIndex = 28;
             // 
             // colID
@@ -550,6 +552,63 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
+            // bindingBill
+            // 
+            this.bindingBill.AddNewItem = null;
+            this.bindingBill.AutoSize = false;
+            this.bindingBill.BackColor = System.Drawing.Color.Transparent;
+            this.bindingBill.CountItem = this.bindingNavigatorCountItem;
+            this.bindingBill.CountItemFormat = "của {0}";
+            this.bindingBill.DeleteItem = null;
+            this.bindingBill.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bindingBill.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.bindingBill.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem});
+            this.bindingBill.Location = new System.Drawing.Point(3, 25);
+            this.bindingBill.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingBill.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingBill.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingBill.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingBill.Name = "bindingBill";
+            this.bindingBill.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingBill.Size = new System.Drawing.Size(931, 43);
+            this.bindingBill.TabIndex = 29;
+            this.bindingBill.Text = "binding";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 40);
+            this.bindingNavigatorCountItem.Text = "của {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 43);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Position";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(40, 22);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.cbBillSearch);
@@ -615,63 +674,6 @@
             this.label5.TabIndex = 28;
             this.label5.Text = "Tìm kiếm theo:";
             // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 43);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(40, 22);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(47, 40);
-            this.bindingNavigatorCountItem.Text = "của {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 43);
-            // 
-            // bindingBill
-            // 
-            this.bindingBill.AddNewItem = null;
-            this.bindingBill.AutoSize = false;
-            this.bindingBill.BackColor = System.Drawing.Color.Transparent;
-            this.bindingBill.CountItem = this.bindingNavigatorCountItem;
-            this.bindingBill.CountItemFormat = "của {0}";
-            this.bindingBill.DeleteItem = null;
-            this.bindingBill.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bindingBill.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.bindingBill.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem});
-            this.bindingBill.Location = new System.Drawing.Point(3, 25);
-            this.bindingBill.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.bindingBill.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.bindingBill.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.bindingBill.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.bindingBill.Name = "bindingBill";
-            this.bindingBill.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingBill.Size = new System.Drawing.Size(931, 43);
-            this.bindingBill.TabIndex = 29;
-            this.bindingBill.Text = "binding";
-            // 
             // btnSearch
             // 
             this.btnSearch.ActiveBorderThickness = 1;
@@ -725,6 +727,33 @@
             this.btnCancel.Visible = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
+            // btnEmail
+            // 
+            this.btnEmail.ActiveBorderThickness = 1;
+            this.btnEmail.ActiveCornerRadius = 20;
+            this.btnEmail.ActiveFillColor = System.Drawing.Color.DarkBlue;
+            this.btnEmail.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEmail.ActiveLineColor = System.Drawing.Color.DarkBlue;
+            this.btnEmail.BackColor = System.Drawing.Color.White;
+            this.btnEmail.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEmail.BackgroundImage")));
+            this.btnEmail.ButtonText = "Gửi Emails";
+            this.btnEmail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmail.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnEmail.IdleBorderThickness = 1;
+            this.btnEmail.IdleCornerRadius = 20;
+            this.btnEmail.IdleFillColor = System.Drawing.Color.White;
+            this.btnEmail.IdleForecolor = System.Drawing.Color.DarkBlue;
+            this.btnEmail.IdleLineColor = System.Drawing.Color.DarkBlue;
+            this.btnEmail.Location = new System.Drawing.Point(11, 75);
+            this.btnEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEmail.Name = "btnEmail";
+            this.btnEmail.Size = new System.Drawing.Size(234, 40);
+            this.btnEmail.TabIndex = 53;
+            this.btnEmail.TabStop = false;
+            this.btnEmail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEmail.Click += new System.EventHandler(this.btnEmail_Click);
+            // 
             // btnSeenBill
             // 
             this.btnSeenBill.ActiveBorderThickness = 1;
@@ -770,7 +799,7 @@
             this.btnCLose1.IdleFillColor = System.Drawing.Color.White;
             this.btnCLose1.IdleForecolor = System.Drawing.Color.DarkBlue;
             this.btnCLose1.IdleLineColor = System.Drawing.Color.DarkBlue;
-            this.btnCLose1.Location = new System.Drawing.Point(15, 75);
+            this.btnCLose1.Location = new System.Drawing.Point(11, 123);
             this.btnCLose1.Margin = new System.Windows.Forms.Padding(4);
             this.btnCLose1.Name = "btnCLose1";
             this.btnCLose1.Size = new System.Drawing.Size(234, 40);
@@ -839,7 +868,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1239, 420);
+            this.ClientSize = new System.Drawing.Size(1239, 459);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.bunifuSeparator1);
             this.Controls.Add(this.groupBox2);
@@ -858,11 +887,11 @@
             this.groupService.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBill)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingBill)).EndInit();
             this.bindingBill.ResumeLayout(false);
             this.bindingBill.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -922,5 +951,6 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEmail;
     }
 }

@@ -145,5 +145,13 @@ namespace HotelManager
             if (e.KeyChar == 27 && btnCancel.Visible == true)
                 btnCancel_Click(sender, null);
         }
+
+        private void btnEmail_Click(object sender, EventArgs e)
+        {
+            fEmail fEmail = new fEmail();
+            fEmail.ShowDialog();
+            this.Show();
+            Show();
+        }
     }
 }

@@ -226,5 +226,18 @@ namespace HotelManager
             else
                 MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            if (CheckAccess("fservice"))
+            {
+                this.Hide();
+                fService fProfile = new fService();
+                fProfile.ShowDialog();
+                this.Show();
+            }
+            else
+                MessageBox.Show("Bạn không quyền truy cập.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
     }        
 }

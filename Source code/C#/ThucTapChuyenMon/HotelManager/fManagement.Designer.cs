@@ -34,6 +34,7 @@
             this.panelRight = new System.Windows.Forms.Panel();
             this.btnClose = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelLeft = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuFlatButton3 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnStaff = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -88,6 +89,7 @@
             // 
             this.panelLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLeft.BackgroundImage")));
             this.panelLeft.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelLeft.Controls.Add(this.bunifuFlatButton3);
             this.panelLeft.Controls.Add(this.bunifuFlatButton2);
             this.panelLeft.Controls.Add(this.btnStaff);
             this.panelLeft.Controls.Add(this.btnCustomer);
@@ -110,6 +112,42 @@
             this.panelLeft.Quality = 10;
             this.panelLeft.Size = new System.Drawing.Size(206, 583);
             this.panelLeft.TabIndex = 0;
+            // 
+            // bunifuFlatButton3
+            // 
+            this.bunifuFlatButton3.Activecolor = System.Drawing.Color.Brown;
+            this.bunifuFlatButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.bunifuFlatButton3.BackColor = System.Drawing.Color.Brown;
+            this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton3.BorderRadius = 0;
+            this.bunifuFlatButton3.ButtonText = "   Quản lí dịch vụ";
+            this.bunifuFlatButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton3.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton3.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton3.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton3.Iconimage")));
+            this.bunifuFlatButton3.Iconimage_right = null;
+            this.bunifuFlatButton3.Iconimage_right_Selected = null;
+            this.bunifuFlatButton3.Iconimage_Selected = null;
+            this.bunifuFlatButton3.IconMarginLeft = 0;
+            this.bunifuFlatButton3.IconMarginRight = 0;
+            this.bunifuFlatButton3.IconRightVisible = true;
+            this.bunifuFlatButton3.IconRightZoom = 0D;
+            this.bunifuFlatButton3.IconVisible = true;
+            this.bunifuFlatButton3.IconZoom = 50D;
+            this.bunifuFlatButton3.IsTab = false;
+            this.bunifuFlatButton3.Location = new System.Drawing.Point(-3, 409);
+            this.bunifuFlatButton3.Name = "bunifuFlatButton3";
+            this.bunifuFlatButton3.Normalcolor = System.Drawing.Color.Brown;
+            this.bunifuFlatButton3.OnHovercolor = System.Drawing.Color.Brown;
+            this.bunifuFlatButton3.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.selected = false;
+            this.bunifuFlatButton3.Size = new System.Drawing.Size(209, 40);
+            this.bunifuFlatButton3.TabIndex = 15;
+            this.bunifuFlatButton3.Text = "   Quản lí dịch vụ";
+            this.bunifuFlatButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton3.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton3.TextFont = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton3.Click += new System.EventHandler(this.bunifuFlatButton3_Click);
             // 
             // bunifuFlatButton2
             // 
@@ -577,5 +615,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnCustomer;
         private Bunifu.Framework.UI.BunifuFlatButton btnStaff;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton3;
     }
 }

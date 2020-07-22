@@ -140,7 +140,8 @@ namespace HotelManager
                 txbIDBookRoom.Text = string.Empty;
             }
         }
-
+        int idReceiveRoom;
+       
         private void btnAddCustomer_Click(object sender, EventArgs e)
         {
             if (txbRoomName.Text != string.Empty && txbRoomTypeName.Text != string.Empty && txbFullName.Text != string.Empty && txbIDCard.Text != string.Empty && txbDateCheckIn.Text != string.Empty && txbDateCheckOut.Text != string.Empty && txbAmountPeople.Text != string.Empty && txbPrice.Text != string.Empty)
@@ -206,6 +207,14 @@ namespace HotelManager
         }
 
         private void btnDetails_Click(object sender, EventArgs e)
+        {
+            fReceiveRoomDetails f = new fReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
+            f.ShowDialog();
+            Show();
+            LoadReceiveRoomInfo();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             fReceiveRoomDetails f = new fReceiveRoomDetails((int)dataGridViewReceiveRoom.SelectedRows[0].Cells[0].Value);
             f.ShowDialog();

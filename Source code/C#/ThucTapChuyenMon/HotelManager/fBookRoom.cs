@@ -204,5 +204,15 @@ namespace HotelManager
             if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
                 e.Handled = true;
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            int idBookRoom = (int)dataGridViewBookRoom.SelectedRows[0].Cells[0].Value;
+            string idCard = dataGridViewBookRoom.SelectedRows[0].Cells[2].Value.ToString();
+            fBookRoomDetails f = new fBookRoomDetails(idBookRoom, idCard);
+            f.ShowDialog();
+            Show();
+            LoadListBookRoom();
+        }
     }
 }

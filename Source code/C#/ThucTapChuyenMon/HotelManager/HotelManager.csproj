@@ -130,6 +130,18 @@
     <Compile Include="fAddRoom.Designer.cs">
       <DependentUpon>fAddRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAddService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddService.designer.cs">
+      <DependentUpon>fAddService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fAddServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAddServiceType.designer.cs">
+      <DependentUpon>fAddServiceType.cs</DependentUpon>
+    </Compile>
     <Compile Include="fAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,6 +166,12 @@
     <Compile Include="fBookRoomDetails.Designer.cs">
       <DependentUpon>fBookRoomDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="fChangeRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fChangeRoom.Designer.cs">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="fCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +195,12 @@
     </Compile>
     <Compile Include="fBookRoom.Designer.cs">
       <DependentUpon>fBookRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fEmail.designer.cs">
+      <DependentUpon>fEmail.cs</DependentUpon>
     </Compile>
     <Compile Include="fPrintBill.cs">
       <SubType>Form</SubType>
@@ -214,6 +238,18 @@
     <Compile Include="fRoom.Designer.cs">
       <DependentUpon>fRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="fService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fService.designer.cs">
+      <DependentUpon>fService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fServiceType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fServiceType.designer.cs">
+      <DependentUpon>fServiceType.cs</DependentUpon>
+    </Compile>
     <Compile Include="fStaff.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -239,6 +275,12 @@
     <EmbeddedResource Include="fAddRoom.resx">
       <DependentUpon>fAddRoom.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fAddService.resx">
+      <DependentUpon>fAddService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fAddServiceType.resx">
+      <DependentUpon>fAddServiceType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fAddStaff.resx">
       <DependentUpon>fAddStaff.cs</DependentUpon>
     </EmbeddedResource>
@@ -251,6 +293,9 @@
     <EmbeddedResource Include="fBookRoomDetails.resx">
       <DependentUpon>fBookRoomDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fChangeRoom.resx">
+      <DependentUpon>fChangeRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fCustomer.resx">
       <DependentUpon>fCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -262,6 +307,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fBookRoom.resx">
       <DependentUpon>fBookRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fEmail.resx">
+      <DependentUpon>fEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fPrintBill.resx">
       <DependentUpon>fPrintBill.cs</DependentUpon>
@@ -280,6 +328,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="fRoom.resx">
       <DependentUpon>fRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fService.resx">
+      <DependentUpon>fService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fServiceType.resx">
+      <DependentUpon>fServiceType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fStaff.resx">
       <DependentUpon>fStaff.cs</DependentUpon>
